@@ -1,0 +1,48 @@
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li class="top-nav-user">
+    <a class="no-padding" href="#">
+      <div class="valign-wrapper nav-user-wrapper">
+        <%= image_tag current_user.avatar_url, class: "top-nav-avatar circle" %>
+        &nbsp;
+        <%= current_user.first_name_and_initial %>
+        &nbsp;
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+      </div>
+    </a>
+  </li>
+  <li class="divider"></li>
+  <li><a href="/users/edit" class='waves-effect waves-red'>Manage Account</a></li>
+  <li><%= link_to 'Edit Profile', edit_user_path(current_user), class: 'waves-effect waves-red' %></li>
+  <li class="divider"></li>
+  <li><%= link_to('Logout', destroy_user_session_path, method: :delete, class: 'waves-effect waves-red') %></li>
+</ul>
+
+<div class="navbar-fixed">
+  <nav class="grey darken-1">
+    <div class="nav-wrapper">
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger full hide-on-large-only" id="navbar-trigger">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </a>
+      <a href="/" class="brand-logo hide-on-large-only" id="logo-container">
+        <%= image_tag 'duco-logo-white.png', class: 'pt-5' %>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li class="top-nav-user">
+          <a class="dropdown-trigger" href="#!" data-target="dropdown1">
+            <div class="valign-wrapper">
+              <%= image_tag current_user.avatar_url, class: "top-nav-avatar circle" %>
+              &nbsp;
+              <%= current_user.first_name_and_initial %>
+              &nbsp;
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger full hide-on-large-only" id="relationships-trigger">
+        <%= render '/components/comments_indicator', message_count: current_user.unread_messages %>
+      </a>
+    </div>
+  </nav>
+</div>
