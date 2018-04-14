@@ -7,7 +7,9 @@ end
 
 gem 'devise'
 gem 'font-awesome-rails'
-gem 'materialize-sass'
+gem 'jquery-rails'
+gem 'materialize-sass', '~> 1.0.0.beta'
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

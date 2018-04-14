@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails trivia: test" uuid="d1d7a25f-eb0f-44f8-8987-dcad9918b8e8">
+      <database-info product="PostgreSQL" version="9.6.8" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <introspection-schemas>trivia_test:public</introspection-schemas>
+    </data-source>
+    <data-source name="Rails trivia: development" uuid="0a8235f4-fbd0-4229-bcad-bc9e0eef019b">
+      <database-info product="PostgreSQL" version="9.6.8" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <introspection-schemas>trivia_development:public</introspection-schemas>
+    </data-source>
+    <data-source name="Rails trivia: production" uuid="210c0fca-1311-4042-b337-8f383e7f6b85">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>karthick</user-name>
+    </data-source>
+  </component>
+</project>

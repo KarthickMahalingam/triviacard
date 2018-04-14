@@ -1,0 +1,30 @@
+<div id="index-banner" class="parallax-container center valign-wrapper red lighten-5">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <h1 class="header center teal-text text-lighten-2">Trivia..Chalenge your brain..</h1>
+      <div class="row center">
+        <h5 class="header col s12 dark">Play the game and stand out of the crowd. Don't wait. Dive in..</h5>
+      </div>
+      <div class="row center">
+        <%= link_to 'Sign Up', new_user_session_path, class: 'waves-effect red waves-light btn' %>
+      </div>
+      <br><br>
+    </div>
+  </div>
+</div>
+
+<div id="index-banner" class="parallax-container">
+  <div class="parallax1">
+    <%= image_tag 'background1.jpg' %>
+  </div>
+</div>
+
+
+
+
+<script>
+  $(document).ready(function () {
+    $('.parallax').parallax();
+  });
+</script>

@@ -12,6 +12,11 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
+ *= require materialize
  */
 @import "materialize";
 @import "font-awesome";
+@import "header";
+@import "form";
+@import "home";

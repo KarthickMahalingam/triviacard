@@ -1,0 +1,25 @@
+<nav class="default" role="navigation">
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo center">Trivia</a>
+    <a href="#" data-activates="nav-mobile" class=" show-on-medium-and-down button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><%= link_to 'Sign in', new_user_session_path %></li>
+      <li><%= link_to 'Sign up', new_user_registration_path, class: "waves-effect red waves-light btn" %></li>
+    </ul>
+    <ul class="side-nav" id="nav-mobile">
+      <li><%= link_to 'Sign in', new_user_session_path %></li>
+      <li><%= link_to 'Sign up', new_user_registration_path %></li>
+    </ul>
+  </div>
+</nav>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<script>
+    $('.button-collapse').sideNav({
+          menuWidth: 150, // Default is 240
+          edge: 'left', // Choose the horizontal origin
+          closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        }
+    );
+</script>
