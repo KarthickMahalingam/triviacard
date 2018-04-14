@@ -14,7 +14,11 @@
 
   <body>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <%= render 'layouts/header' %>
+  <% if user_signed_in? %>
+    <%= render 'layouts/loggedin_header' %>
+  <% else %>
+    <%=  render 'layouts/header' %>
+  <% end %>
     <%= yield %>
     <%= render 'layouts/footer' %>
   </body>

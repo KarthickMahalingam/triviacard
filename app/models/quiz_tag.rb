@@ -1,0 +1,2 @@
+class QuizTag < ApplicationRecord
+end
