@@ -2,66 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="020ae2ad-a19a-4d8e-a2a6-7e4302da1885" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/helpers/devise_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/choice.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/question.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/question_tag.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/tag.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/quiz/_choice.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/quiz/_tag.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20180414174958_create_choices.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a8235f4-fbd0-4229-bcad-bc9e0eef019b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0a8235f4-fbd0-4229-bcad-bc9e0eef019b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a8235f4-fbd0-4229-bcad-bc9e0eef019b/storage_v2/_src_/database/trivia_development.f3HZvg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0a8235f4-fbd0-4229-bcad-bc9e0eef019b/storage_v2/_src_/database/trivia_development.f3HZvg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d1d7a25f-eb0f-44f8-8987-dcad9918b8e8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d1d7a25f-eb0f-44f8-8987-dcad9918b8e8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/trivia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trivia.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users/confirmations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/confirmations_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users/passwords_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/passwords_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/sessions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users/unlocks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/unlocks_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/quiz_option.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/quiz_question.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/quiz_tag.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_loggedin_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_loggedin_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/passwords/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/passwords/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/registrations/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/sessions/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/shared/_links.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/shared/_links.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20180414173434_create_quiz_tags.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180414173434_create_tags.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20180414174417_create_quiz_questions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180414174417_create_questions.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20180414174958_create_quiz_options.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/application-0fa9d8b14b2c28e5012c96026fdf16cbc63d98a50fb10d181c00ad5d4badca4e.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/application-0fa9d8b14b2c28e5012c96026fdf16cbc63d98a50fb10d181c00ad5d4badca4e.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/application-a4f8bb76a123a71a36f93e63c11bd0f296d7aea307fc40c49b8ea6c61faf353d.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/application-a4f8bb76a123a71a36f93e63c11bd0f296d7aea307fc40c49b8ea6c61faf353d.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/application-f1b7e956822886a82164c003a76ecb1e95fc6de0d993aadf82418f058591f6ba.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/application-f1b7e956822886a82164c003a76ecb1e95fc6de0d993aadf82418f058591f6ba.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/jquery-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/jquery2-25ca496239ae8641a09627c8aace5863e7676e465fbb4ce81bc7eb78c4d15627.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery2-25ca496239ae8641a09627c8aace5863e7676e465fbb4ce81bc7eb78c4d15627.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/jquery3-06c43429d1047ce3f355da574d8a9750209971b8b1b8f264f91f5518c5fcc060.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery3-06c43429d1047ce3f355da574d8a9750209971b8b1b8f264f91f5518c5fcc060.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/materialize-aa032c2f8cef23a84869b7471593275759bc2400a3ec8aeb374e52ef1d6da8d5.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/materialize-aa032c2f8cef23a84869b7471593275759bc2400a3ec8aeb374e52ef1d6da8d5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/materialize-sprockets-4ad19ec363328ec04a656782b1c6dcac3d33f7a245f55aef8a07d1c0ef9a2ee1.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/materialize-sprockets-4ad19ec363328ec04a656782b1c6dcac3d33f7a245f55aef8a07d1c0ef9a2ee1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/materialize/date_picker/picker.date-72a700518044ea68f404aca532ebb3bff932870af3670f85b4379671fd457e37.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/materialize/date_picker/picker.date-72a700518044ea68f404aca532ebb3bff932870af3670f85b4379671fd457e37.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/materialize/extras/nouislider-3e59f13729246b51edbd18894a76952e3d2696c23235a22b6004971b8ed9fa01.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/materialize/extras/nouislider-3e59f13729246b51edbd18894a76952e3d2696c23235a22b6004971b8ed9fa01.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/materialize/extras/nouislider.min-295900f00fe4daf6f7bd593d60dab23085351b0e363a96f7aaa6fb6c7e193a54.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/materialize/extras/nouislider.min-295900f00fe4daf6f7bd593d60dab23085351b0e363a96f7aaa6fb6c7e193a54.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/quiz_options.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/choices.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/quiz_tags.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/tags.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -93,11 +34,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/quiz/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
+            <state relative-caret-position="86">
+              <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -165,6 +115,7 @@
       <find>3</find>
       <find>binding</find>
       <find>binding.pry</find>
+      <find>asset</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app</dir>
@@ -181,7 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/users/shared/_links.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/home.js" />
@@ -232,6 +182,7 @@
         <option value="$PROJECT_DIR$/app/controllers/quiz_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/quiz/_choice.html.erb" />
         <option value="$PROJECT_DIR$/app/views/quiz/new.html.erb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -276,6 +227,13 @@
               <item name="trivia" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="trivia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trivia" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="trivia" type="b2602c69:ProjectViewProjectNode" />
@@ -409,6 +367,18 @@
               <item name="trivia" type="b2602c69:ProjectViewProjectNode" />
               <item name="trivia" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="trivia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trivia" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="trivia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trivia" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="initializers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="trivia" type="b2602c69:ProjectViewProjectNode" />
@@ -690,17 +660,18 @@
       <workItem from="1523723242007" duration="35853000" />
       <workItem from="1523815195701" duration="32213000" />
       <workItem from="1523909236982" duration="99000" />
-      <workItem from="1523918245361" duration="361000" />
+      <workItem from="1523918245361" duration="966000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115123000" />
+    <option name="totallyTimeSpent" value="115728000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -709,7 +680,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32991454" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32820514" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2888889" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2888889" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -738,13 +709,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/form.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20180414174033_rename_quiz_to_quiz_tag.rb" />
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -1156,8 +1120,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/quiz/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
+        <state relative-caret-position="86">
+          <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
         </state>
       </provider>
     </entry>
