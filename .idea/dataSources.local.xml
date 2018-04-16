@@ -6,6 +6,7 @@
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>karthick</user-name>
       <introspection-schemas>trivia_test:public</introspection-schemas>
     </data-source>
     <data-source name="Rails trivia: development" uuid="0a8235f4-fbd0-4229-bcad-bc9e0eef019b">
@@ -13,6 +14,7 @@
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>karthick</user-name>
       <introspection-schemas>trivia_development:public</introspection-schemas>
     </data-source>
     <data-source name="Rails trivia: production" uuid="210c0fca-1311-4042-b337-8f383e7f6b85">

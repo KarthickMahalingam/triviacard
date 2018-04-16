@@ -3,9 +3,15 @@
     <a href="/" class="brand-logo center">Trivia</a>
     <a href="#" data-activates="nav-mobile" class=" show-on-medium-and-down button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
+      <li><%= link_to 'New Card', quiz_new_path%></li>
+      <li><%= link_to 'Challenge', destroy_user_session_path %></li>
+      <li><%= link_to 'Leaderboard', destroy_user_session_path %></li>
       <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
     </ul>
     <ul class="side-nav" id="nav-mobile">
+      <li><%= link_to 'New Card', quiz_new_path %></li>
+      <li><%= link_to 'Challenge', destroy_user_session_path %></li>
+      <li><%= link_to 'Leaderboard', destroy_user_session_path %></li>
       <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
     </ul>
   </div>

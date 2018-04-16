@@ -3,6 +3,7 @@
     <div class="col s6 offset-s3 z-depth-1" id="panell">
       <h5 id="title" class="center-align">Login Form</h5>
       <%= form_for(resource, as: resource_name, url: session_path(resource_name), class: 'form-field') do |f| %>
+        <%= devise_error_messages! %>
         <div class="form-fields">
           <div class="input-field">
             <%= f.label :email %><br/>
@@ -32,10 +33,9 @@
             </div>
           <% end -%>
         </div>
-
-
         <div class="actions container center">
           <%= f.submit "Log in", class: 'waves-effect waves-light btn' %>
+          <%= render "users/shared/links" %>
         </div>
       <% end %>
       <br/>

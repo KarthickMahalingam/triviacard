@@ -546,7 +546,7 @@ jQuery.extend( {
 } );
 
 // JSHint would error on this code due to the Symbol not being defined in ES5.
-// Defining this global in .jshintrc would create a danger of using the global
+// Defining this global in .jshintrc would new a danger of using the global
 // unguarded in another place, it seems safer to just disable JSHint for these
 // three lines.
 /* jshint ignore: start */
@@ -1850,7 +1850,7 @@ Expr = Sizzle.selectors = {
 					Sizzle.error( "unsupported pseudo: " + pseudo );
 
 			// The user may use createPseudo to indicate that
-			// arguments are needed to create the filter function
+			// arguments are needed to new the filter function
 			// just as Sizzle does
 			if ( fn[ expando ] ) {
 				return fn( argument );
@@ -5060,7 +5060,7 @@ jQuery.event = {
 
 		if ( type.indexOf( "." ) > -1 ) {
 
-			// Namespaced trigger; create a regexp to match event type in handle()
+			// Namespaced trigger; new a regexp to match event type in handle()
 			namespaces = type.split( "." );
 			type = namespaces.shift();
 			namespaces.sort();
@@ -7503,7 +7503,7 @@ function createFxNow() {
 	return ( fxNow = jQuery.now() );
 }
 
-// Generate parameters to create a standard animation
+// Generate parameters to new a standard animation
 function genFx( type, includeWidth ) {
 	var which,
 		attrs = { height: type },
@@ -8569,7 +8569,7 @@ if ( !getSetAttribute ) {
 	nodeHook = {
 		set: function( elem, value, name ) {
 
-			// Set the existing or create a new attribute node
+			// Set the existing or new a new attribute node
 			var ret = elem.getAttributeNode( name );
 			if ( !ret ) {
 				elem.setAttributeNode(
@@ -9417,7 +9417,7 @@ jQuery.extend( {
 
 		// For options that shouldn't be deep extended:
 		// you can add your own custom options here if
-		// and when you create one that shouldn't be
+		// and when you new one that shouldn't be
 		// deep extended (see ajaxExtend)
 		flatOptions: {
 			url: true,
@@ -10343,7 +10343,7 @@ if ( xhrSupported ) {
 	} );
 }
 
-// Functions to create xhrs
+// Functions to new xhrs
 function createStandardXHR() {
 	try {
 		return new window.XMLHttpRequest();

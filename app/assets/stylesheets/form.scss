@@ -1,10 +1,16 @@
 #panell{
 	margin-top: 100px;
 	padding: 0px;
+	width: 80%;
 }
 .form-fields {
 	padding: 2px;
 }
+
+.input-field label {
+	pointer-events: auto;
+}
+
 form{
 	padding:12px;
 	border-radius: 3px;

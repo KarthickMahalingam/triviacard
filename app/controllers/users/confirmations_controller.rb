@@ -7,7 +7,7 @@ class Users::ConfirmationsController < Devise::ConfirmationsController
   # end
 
   # POST /resource/confirmation
-  # def create
+  # def new
   #   super
   # end
 

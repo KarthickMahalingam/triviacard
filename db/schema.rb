@@ -10,29 +10,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180414174958) do
+ActiveRecord::Schema.define(version: 20180416010703) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "quiz_options", force: :cascade do |t|
-    t.bigint "quiz_questions_id"
-    t.string "answer"
-    t.boolean "correct"
+  create_table "answers", force: :cascade do |t|
+    t.bigint "question_id"
+    t.bigint "choice_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["quiz_questions_id"], name: "index_quiz_options_on_quiz_questions_id"
+    t.index ["choice_id"], name: "index_answers_on_choice_id"
+    t.index ["question_id"], name: "index_answers_on_question_id"
   end
 
-  create_table "quiz_questions", force: :cascade do |t|
-    t.bigint "quiz_tags_id"
+  create_table "choices", force: :cascade do |t|
+    t.bigint "question_id"
+    t.string "quiz_options"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["question_id"], name: "index_choices_on_question_id"
+  end
+
+  create_table "question_tags", force: :cascade do |t|
+    t.integer "question_id"
+    t.integer "tag_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["question_id"], name: "index_question_tags_on_question_id"
+    t.index ["tag_id"], name: "index_question_tags_on_tag_id"
+  end
+
+  create_table "questions", force: :cascade do |t|
     t.string "question"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["quiz_tags_id"], name: "index_quiz_questions_on_quiz_tags_id"
+    t.index ["user_id"], name: "index_questions_on_user_id"
   end
 
-  create_table "quiz_tags", force: :cascade do |t|
+  create_table "tags", force: :cascade do |t|
     t.string "topic"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -51,6 +68,8 @@ ActiveRecord::Schema.define(version: 20180414174958) do
     t.inet "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "first_name"
+    t.string "last_name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

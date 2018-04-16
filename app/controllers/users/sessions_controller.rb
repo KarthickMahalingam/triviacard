@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Users::SessionsController < Devise::SessionsController
-  # before_action :configure_sign_in_params, only: [:create]
+  # before_action :configure_sign_in_params, only: [:new]
   def after_sign_in_path_for(resource)
     dashboard_index_path
   end
@@ -11,7 +11,7 @@ class Users::SessionsController < Devise::SessionsController
   # end
 
   # POST /resource/sign_in
-  # def create
+  # def new
   #   super
   # end
 

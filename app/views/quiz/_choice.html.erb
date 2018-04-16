@@ -1,0 +1,4 @@
+<%= form.fields_for(:choice, class: 'form-field') do |option| %>
+  <%= option.label :option %>
+  <%= option.text_field :quiz_options, autofocus: true, placeholder: 'Option 1', name: 'question[choices][]' %>
+<% end %>

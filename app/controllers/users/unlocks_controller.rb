@@ -7,7 +7,7 @@ class Users::UnlocksController < Devise::UnlocksController
   # end
 
   # POST /resource/unlock
-  # def create
+  # def new
   #   super
   # end
 

@@ -1,0 +1,8 @@
+<%= form.fields_for(QuestionTag.new, class: 'form-field') do |tags| %>
+  <%= select_tag(:tag_ids,
+                 options_for_select(@tags.collect{ |u| [u.topic, u.id] }),
+                 :multiple => :multiple,
+                 name: 'question[tag_ids][]',
+                 class: 'select',
+                 focus: true) %>
+<% end %>
