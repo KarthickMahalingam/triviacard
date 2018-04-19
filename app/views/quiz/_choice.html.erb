@@ -1,4 +1,14 @@
-<%= form.fields_for(:choice, class: 'form-field') do |option| %>
-  <%= option.label :option %>
-  <%= option.text_field :quiz_options, autofocus: true, placeholder: 'Option 1', name: 'question[choices][]' %>
-<% end %>
+<div class="row quiz-options valign-wrapper">
+  <%= form.fields_for :choices do |option|%>
+    <div class="col s12 m6 l6">
+      <%= option.label :quiz_options %>
+      <%= option.text_field :quiz_options, name:"question[choices_attributes][][quiz_options]",autofocus: true, required: true, class: 'option-text', placeholder: "Option #{choice_count+1}" %>
+    </div>
+    <div class="col s12 m6 l6">
+      <%= option.fields_for :answers do |answer| %>
+        <%= check_box_tag :choice_id, choice_count, nil, name: "answer[]", id: "answer_id#{choice_count}" %>
+        <%= label_tag "answer_id#{choice_count}", "Answer" %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
