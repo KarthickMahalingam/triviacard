@@ -10,7 +10,7 @@
           <h3><span class="card-title">Question</span></h3>
           <h4><%= unattended_question.question %></h4>
           <%= hidden_field 'question_id', question, name: 'question_id', value: question %>
-          <div class="card-action">
+          <div class="card-action grey choices">
             <h5 class="white-text">Options</h5>
             <% unattended_question.choices.pluck(:id, :quiz_options).each do |id, option| %>
               <label>
@@ -23,7 +23,7 @@
         </div>
       </div>
       <br/>
-      <%= submit_tag "submit", class: 'btn btn-flat btn-small btn-red' %>
+      <%= submit_tag "submit", class: 'waves-effect waves-light btn-large red  waves-teal' %>
     <% end %>
   </div>
 </div>

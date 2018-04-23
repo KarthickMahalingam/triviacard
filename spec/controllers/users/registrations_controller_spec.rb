@@ -8,15 +8,16 @@ RSpec.describe Users::RegistrationsController, type: :controller do
     end
   end
 
-  @attr = {
-      email: FFaker::Internet.email,
-      first_name: FFaker::Name.first_name,
-      last_name: FFaker::Name.last_name,
-      password: '12344566',
-      password_confirmation: '12344566'
-  }
-
   describe 'registrations_controller' do
+    before do
+      @attr = {
+          email: FFaker::Internet.email,
+          first_name: FFaker::Name.first_name,
+          last_name: FFaker::Name.last_name,
+          password: '12344566',
+          password_confirmation: '12344566'
+      }
+    end
     it 'should redirect to dashboard index page after signin' do
       path = controller.after_sign_up_path_for user
       expect(path).to eq dashboard_index_path
