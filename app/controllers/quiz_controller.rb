@@ -11,7 +11,6 @@ class QuizController < ApplicationController
     question = Question.create(question_params)
     create_answer = QuestionSetter.new(question)
     create_answer.create_from_params(answer_params)
-    flash[:success] = "Trivia card created"
     redirect_to quiz_new_path
   end
 

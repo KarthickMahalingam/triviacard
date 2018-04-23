@@ -8,6 +8,8 @@ class QuestionSetter
     params.each do |ans|
       @choice = @question.choices.find @choice_ids[ans.to_i]
       @choice.answers.create(question_id: @choice.question_id)
+      return false unless @choice.valid?
+      true
     end
   end
 end

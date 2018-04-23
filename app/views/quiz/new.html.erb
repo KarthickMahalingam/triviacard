@@ -1,38 +1,7 @@
-<div class="container">
-  <div class="row">
-    <div class="col s6 m6 l8 offset-s1 z-depth-1" id="panell">
-      <h5 id="title" class="center-align">Create Trivia card</h5>
-      <%= form_for(@question, url: quiz_create_path, class: 'form-field', remote: true) do |f| %>
-        <%= f.hidden_field :user_id, value: current_user.id %>
-        <div class="form-fields">
-          <div class="input-field">
-            <%= render 'tag', form: f %>
-          </div>
-
-          <div class="input-field">
-            <%= f.label "Question" %>
-            <%= f.text_field :question, required: true, autofocus: true %>
-          </div>
-
-          <div class=" choice-form">
-            <div class="choice-field">
-              <% 4.times do |choice| %>
-                <%= render 'choice', form: f, choice_count: choice, class:"form-choice#{choice}" %>
-              <% end %>
-            </div>
-          </div>
-          <div class="add-new">
-            <i class="material-icons">add_circle</i> &nbsp; Add new option
-          </div>
-
-          <div class="actions">
-            <%= f.submit 'Submit', class: 'waves-effect waves-light red btn' %>
-          </div>
-        </div>
-      <% end %>
-    </div>
-  </div>
-</div>
+<% flash.each do |key, value| %>
+  <script> Materialize.toast('<%= key %> <%= value %>', 4000);</script>
+<% end %>
+<%= render 'new_question_form' %>
 
 <script>
   $(document).ready(function () {

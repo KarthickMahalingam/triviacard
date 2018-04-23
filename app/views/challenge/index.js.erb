@@ -1,0 +1,17 @@
+$html = "<%= escape_javascript(render 'question', unattended_question: @unattended_question, question: @question) %>";
+$container = $('.show-question');
+$container.html($html);
+$(".show-question :input").prop("disabled", true)
+<% if @answers.to_set  == @selected_options.to_set %>
+  $('.question-result i').addClass('green-text fa fa-check');
+  $('.points').html('Points added: +4');
+<% else %>
+  $('.question-result i').addClass('red-text fa fa-close');
+  $('.points').html('Points deducted: -1');
+  <% @answers.each do |answer| %>
+    $('input[name="options[]"][value="' + <%= answer %> + '"]').prop("checked", true);
+$('input[name="options[]"][value="' + <%= answer %> + '"]').addClass('green-text');
+  <% end %>
+<% end %>
+
+setTimeout("location.href = '<%= challenge_show_path %>';",4000);

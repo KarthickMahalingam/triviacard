@@ -10,8 +10,6 @@ gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'materialize-sass', '~> 1.0.0.beta'
 
-
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
 # Use postgresql as the database for Active Record
@@ -44,8 +42,12 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
+  gem 'factory_bot_rails'
+  gem 'ffaker'
+  gem 'guard-rspec'
   gem 'pry-rails'
-  gem 'selenium-webdriver'
+  gem 'rspec-rails'
+  gem 'spring-commands-rspec'
 end
 
 group :development do

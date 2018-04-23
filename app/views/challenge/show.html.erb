@@ -1,2 +1,20 @@
-<h1>Challenge#show</h1>
-<p>Find me in app/views/challenge/show.html.erb</p>
+<% flash.each do |key, value| %>
+  <script> Materialize.toast('<%= key %> <%= value %>');</script>
+<% end %>
+<div class="container question-card show-question">
+  <%= render 'question', unattended_question: @unattended_question, question: @question %>
+</div>
+
+
+<script>
+  $(document).ready(function () {
+    $("form").submit(function () {
+      if ($('input:checkbox').filter(':checked').length < 1) {
+        Materialize.toast('Please select atleast one answer', 4000);
+        return false;
+      }
+    })
+  });
+
+</script>
+
