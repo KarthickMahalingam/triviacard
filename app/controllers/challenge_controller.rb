@@ -17,7 +17,8 @@ class ChallengeController < ApplicationController
     if @answers.to_set == @selected_options.to_set
       player_record = current_user.player_answers.new(question_id: @question, correct: true)
       if player_record.save
-        @user_score = UserScore.find current_user.id
+        binding.pry
+        @user_score = UserScore.find_by_user_id current_user.id
         @user_score = UserScore.new(user_id: current_user.id) if @user_score.nil?
         @user_score.update_user_score('success') if @user_score.present?
         flash[:success] = 'Saved' if @user_score.save
