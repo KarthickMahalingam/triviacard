@@ -1,24 +1,15 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Trivia Card
+  Trivia card games that lets you post your own questions, solve challenges
+  
+## Progress
+  Successfully implemented the below modules
+  Users  can 
+  1) Create new trivia card
+  2) Solve challenges
+  
+## Testing
+  used RSpec for BDD
+  Factory for data factories
+  
+  
