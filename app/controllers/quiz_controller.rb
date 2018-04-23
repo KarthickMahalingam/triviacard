@@ -1,5 +1,6 @@
 class QuizController < ApplicationController
   skip_before_action :verify_authenticity_token
+  before_action :authenticate_user!
   def new
     @tags = Tag.all
     @question = Question.new

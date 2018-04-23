@@ -77,3 +77,12 @@ que9_choice2 =  question9.choices.create(quiz_options: 'Adjacent')
 que9_choice3 =  question9.choices.create(quiz_options: 'Side')
 que9_choice4 =  question9.choices.create(quiz_options: 'None')
 question9.answers.create(choice_id: que9_choice1.id)
+
+
+tag1 = Tag.create(topic: 'Technology')
+tag2 = Tag.create(topic: 'Science')
+tag3 = Tag.create(topic: 'Sports')
+tag4 = Tag.create(topic: 'Politics')
+tag5 = Tag.create(topic: 'Universe')
+tag6 = Tag.create(topic: 'History')
+tag7 = Tag.create(topic: 'Mathematics')
